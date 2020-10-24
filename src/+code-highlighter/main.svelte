@@ -82,5 +82,4 @@ $:onContentChange(content);
 		background: transparent;
 	}
 </style>
-<slot></slot>
 <pre {...$$restProps}><code bind:this={e}></code></pre>
