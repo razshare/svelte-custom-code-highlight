@@ -33,7 +33,7 @@ function update(){
 	e.classList.add('hljs')
 	e.classList.add(lang.split("\s")[0])
 	hljs.registerLanguage(lang,languages[lang]);
-	e.innerText = text;
+	e.innerHTML = text;
 	hljs.highlightBlock(e);
 }
 
@@ -57,13 +57,28 @@ function onContentChange(content){
 		text = text.trim();
 	}else{
 		text = content.trim();
-	}
+	} 
 	update();
 }
 $:onContentChange(content);
 </script>
+
 <style>
 	@import './style.css';
+	pre{
+		margin: 0;
+	}
+	code{
+		padding: 0;
+	}
+	@media screen and (max-width: 980px) {
+		code{
+			padding: 0.3rem;
+		}
+   }
+	.hljs{
+		background: transparent;
+	}
 </style>
-<pre><code bind:this={e} {...$$restProps}></code></pre>
 
+<pre {...$$restProps}><code bind:this={e}></code></pre>
