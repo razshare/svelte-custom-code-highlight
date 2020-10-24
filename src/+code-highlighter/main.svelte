@@ -13,7 +13,7 @@ let languages = {
 	html:xml,
 	xml,
 	json,
-	"php-yemplate":phpTemplate,
+	"php-template":phpTemplate,
 	php,
 	bash
 };
