@@ -33,7 +33,7 @@ function update(){
 	e.classList.add('hljs')
 	e.classList.add(lang.split("\s")[0])
 	hljs.registerLanguage(lang,languages[lang]);
-	e.innerHTML = text;
+	e.innerText = text;
 	hljs.highlightBlock(e);
 }
 
