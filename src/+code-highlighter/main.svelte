@@ -33,7 +33,7 @@ function update(){
 	e.classList.add('hljs')
 	e.classList.add(lang.split("\s")[0])
 	hljs.registerLanguage(lang,languages[lang]);
-	e.innerText = text;
+	e.innerHTML = text;
 	hljs.highlightBlock(e);
 }
 
@@ -57,7 +57,7 @@ function onContentChange(content){
 		text = text.trim();
 	}else{
 		text = content.trim();
-	}
+	} 
 	update();
 }
 $:onContentChange(content);
