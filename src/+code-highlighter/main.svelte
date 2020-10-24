@@ -77,6 +77,8 @@ $:onContentChange(content);
 		}
    }
 	.hljs{
+		padding-top: 0;
+		padding-bottom: 0;
 		background: transparent;
 	}
 </style>
