@@ -62,8 +62,21 @@ function onContentChange(content){
 }
 $:onContentChange(content);
 </script>
+
 <style>
 	@import './style.css';
+	code{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	@media screen and (max-width: 980px) {
+		code{
+			padding: 0.3rem;
+		}
+   }
+	.hljs{
+		background: transparent;
+	}
 </style>
-<pre><code bind:this={e} {...$$restProps}></code></pre>
 
+<pre {...$$restProps}><code bind:this={e}></code></pre>
