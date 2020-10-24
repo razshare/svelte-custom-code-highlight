@@ -62,6 +62,8 @@ function onContentChange(content){
 }
 $:onContentChange(content);
 </script>
-
+<style>
+	@import './style.css';
+</style>
 <pre><code bind:this={e} {...$$restProps}></code></pre>
 
