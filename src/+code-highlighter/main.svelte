@@ -65,9 +65,11 @@ $:onContentChange(content);
 
 <style>
 	@import './style.css';
+	pre{
+		margin: 0;
+	}
 	code{
-		padding-top: 0;
-		padding-bottom: 0;
+		padding: 0;
 	}
 	@media screen and (max-width: 980px) {
 		code{
