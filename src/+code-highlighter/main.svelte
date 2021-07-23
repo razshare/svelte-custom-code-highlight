@@ -3,12 +3,16 @@
 <script>
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
+import typescript from 'highlight.js/lib/languages/typescript';
 import xml from 'highlight.js/lib/languages/xml';
 import json from 'highlight.js/lib/languages/json';
 import phpTemplate from 'highlight.js/lib/languages/php-template';
 import php from 'highlight.js/lib/languages/php';
 import bash from 'highlight.js/lib/languages/bash';
 let languages = {
+	ts:typescript,
+	typescript,
+	js:javascript,
 	javascript,
 	html:xml,
 	xml,
